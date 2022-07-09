@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+}
+.container{  
+    width: 1440px;   /*  độ rộng của trang web*/
+    margin: auto;   /* căn giữa */
+  
+}
+.head{
+    display: flex;   /*  làm cho cùng 1 dòng*/
+    justify-content: space-between;   /*  đẩy menu sang 2 bên*/
+}
+
+.menu li{
+list-style: none;  /*  bỏ dấu chấm list*/
+padding: 25px;
+
+}.menu ul{
+    display: flex;
+    align-items: center;  /*   căn giữa*/
+}
+.menu a{
+    text-decoration: none;  /* dấu gạch chân */
+    color: black;
+    font-size: 20px;
+    transition: 0.2s;  /* chuyển cảnh trong 0.2s */
+}
+.menu a:hover{
+    text-decoration: underline;   /* dấu gạch chân  */
+    font-size: 25px;
+    font-weight: 700;
+   
+}
+.duoi{
+    float: right;   /* căn phải */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.duoi input{
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+.duoi button{
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    background-color: gray;
+    color: aliceblue;
+    
+}
+.duoi button:hover{
+    background-color: #fff;
+    color: gray;
+}
+h1{
+    text-align: center;  /*   căn giữa */
+    font-weight: bolder;      /*   in đậm chữ*/
+}
+.xtc{
+    text-align: center;  
+    margin-top: 80px;
+    margin-bottom: 50px;
+    
+}
+.xtc button{
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+}
+.xtc button:hover{
+    color: gray;
+    background-color: #fff;
+    border: 1px gray solid;
+}
+.i{
+    text-align: center;
+    margin-top: 10px;
+}
+.content{
+    display: grid;   /* chia cột */
+    grid-template-columns: 3fr 1fr;   /*  chia cột theo tỷ lệ 3-1 */
+    column-gap: 40px;   /*   khoảng ccas gưiuax các cột*/
+}
+.ct{
+    text-align: center;
+}
+.product{
+    display: grid;   /*   chia cột*/
+    grid-template-columns: 1fr 1fr 1fr;   /*   chia cột theo tỷ lệ 1-1-1*/
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item-conten a{
+    text-decoration: none;
+}
+.title{
+    color: rgb(7, 0, 0);
+    font-size: 25px;
+}
+.title:hover{
+    color: green;
+    font-weight: 600;
+}
+.star{
+    color: rgba(255, 68, 0, 0.87);
+}
+.price{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+.ct button{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.685);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+.ct button:hover{
+    background-color: #fff;
+    border: rgba(128, 128, 128, 0.685) solid 1px;
+    color: gray;
+}.menusub li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+}
+.menusub li:hover{
+    
+    transition: 0.3s;
+    font-weight: 600;
+    background-color: rgb(155, 153, 153) ;
+}
+.menusub h2{
+    background-color: rgba(29, 23, 23, 0.822);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.menusub a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.img{
+    text-align: center;
+    margin-top:80px;
+}
+
+
+
+footer{
+    display: grid;   /*   chia cột*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;   /*   chia theo tỷ lệ 1-1-1-1*/
+    background-color: rgb(196, 195, 195);
+    padding: 20px;
+    margin-bottom: 50px;
+    column-gap: 40px;
+    margin-top: 50px;
+}
+.cot1{
+    width: 90%;
+}
+.cot2 li{
+    padding: 10px;
+}
+.cot2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(18, 3, 158);
+}
+.cot3 li{
+    padding: 10px;
+}
+.cot3 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(18, 3, 158);
+}
+.main{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: rgba(105, 103, 103, 0.678);
+ padding: 100px;
+}
+table{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+.main h2{
+    text-align: center;
+} 
+table input{
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+.btn{
+    text-align: center;
+    padding: 20px;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.842);
+    color: #fff;
+    border: none;
+}
+.btn button:hover{
+    background-color: #fff;
+    color: rgba(128, 128, 128, 0.842);
+    border: 1px solid  rgba(128, 128, 128, 0.842);;
+}
+.tt{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.productsub{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;  
+}
+.input{
+    border: none;
+    width: 100px;
+    border-bottom: 5px solid gray;
+    margin-bottom: 20px;
+}
+.quantity{
+    width: 30px;
+    padding: 15px;
+    color: gray;
+}
+.tt_product button{
+    padding: 15px;
+   
+}
+.add{
+    margin-left: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(138, 133, 133);
+    color: #fff;
+}
+.add:hover{
+    color: rgb(138, 133, 133);
+    border: 1px solid rgb(138, 133, 133);
+    background-color: #fff;
+}
+.productnew{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gachngang{
+    margin: 50px;
+    margin-left: 0px;
+    border: none;
+    border-bottom: 5px solid gray;
+    width: 400px;
+}
+.theshop{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.shop-left tr, th,td{
+    padding: 35px;
+}
